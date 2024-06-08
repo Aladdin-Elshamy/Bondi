@@ -2,6 +2,8 @@
 
 Welcome to the Bondi website! This project is a demonstration of my skills in web development, particularly using Bootstrap to create a responsive and aesthetically pleasing site.
 
+![screencapture-aladdin-elshamy-github-io-Bondi-2024-06-08-17_39_32](https://github.com/Aladdin-Elshamy/Bondi/assets/122921299/ce16f7d4-1386-4460-b09c-c75ec07dafb3)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
