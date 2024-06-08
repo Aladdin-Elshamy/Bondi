@@ -1,0 +1,204 @@
+:root{
+    --main-color:#19283f;
+    --section-color:#eff7fa;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main-title{
+    color:#33d1cc
+}
+.active{
+    background-color:#0d6efd;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    color:#fff;
+    cursor: default;
+}
+.active:hover{
+    color:#fff !important
+}
+.main-title::after{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 1.5px;
+    background-color: #33d1cc;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1.5em;
+}
+
+/* Start navbar */
+.navbar{
+    background-color: var(--main-color);
+}
+.navbar-toggler{
+    border: 1px solid #fff;
+}
+.search{
+    border-left: 1px solid #fff;
+    color: #fff;
+    padding-left: 1em;
+}
+.btn{
+    color:#fff
+}
+@media(max-width: 991px){
+    .navbar .btn{
+        background-color: transparent;
+    }
+}
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:active{
+    color: #0d6efd ;
+}
+.navbar .nav-item .nav-link{
+    color:#fff
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* Landing section */
+
+.landing{
+    background-color: var(--main-color);
+    min-height: calc(100vh - 86px);
+}
+.landing-btn{
+    border-width:0.1em ;
+}
+
+/* Features */
+.features i{
+    color:#33d1cc
+}
+.icons{
+    height: 200px;
+}
+.icons i{
+    transform: translateX(-50%);
+}
+.icons .number{
+    font-size: 12rem;
+    color:var(--section-color);
+    
+}
+
+/* Our work */
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work .box{
+    overflow: hidden;
+    position: relative;
+    padding:5px;
+}
+.our-work ul li:not(.active):hover{
+    cursor: pointer;
+    color:#0d6efd
+}
+.our-work .box::before{
+    content: "";
+    position: absolute;
+    background-color: #33d1cc;
+    width: 0;
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.3s linear;
+    font-size: 1.5rem;
+}
+.our-work .box:hover::before{
+    width: calc(100% - 10px);
+    content: attr(data-work);
+}
+.our-work .btn{
+    border-radius: 1em !important;
+}
+/* Start Stuff */
+.description{
+    max-width: 500px;
+}
+
+/* Start Team */
+.team{
+    background-color: var(--section-color);
+}
+.card h4{
+    background-color:#33d1cc;
+}
+
+/* Start Project */
+.project{
+    background-color: var(--main-color);
+}
+
+/* Start Contact */
+.contact{
+    background-color: #ffc400;
+}
+input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0
+}
+input[type="email"]:focus{
+    outline: none ;
+}
+.contact ::placeholder{
+    color:#fff
+}
+.contact button{
+    color: #ffc400;
+    outline: none;
+    border: none;
+    background-color: var(--main-color);
+}
+.contact button[type="submit"]:hover{
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    outline: none;
+    border:none
+}
+.contact button:focus
+,.contact button:active{
+    outline: none;
+    transform: scale(0.97);
+
+}
+.btn-close{
+    background-color: transparent !important;
+    opacity: 1;
+}
+/* Start Footer */
+footer{
+    background-color: var(--main-color);
+}
+.facebook{
+    color:#fff;
+    background-color: #0d6efd;
+    border-radius: 50%;
+}
+.twitter{
+    color:#1da1f2;
+}
+.linkedin {
+    color:#dce6f1;
+    background-color: #1877f2;
+    padding: 0.2em;
+    font-size: 1.55rem;
+    border-radius: 20%;
+}
+
+.youtube{
+    color:#fff;
+    background-color: #ff0000;
+    padding: 0.25em;
+    font-size: 1.55rem;
+    border-radius: 50%;
+}
